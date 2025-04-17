@@ -41,6 +41,11 @@ make
 ```bash
 sudo make install
 ```
+### Copy Bluetooth firmware:
+Copy the rtl_bt folder to /lib/firmware/:
+```bash
+sudo cp -r rtl_bt /lib/firmware/
+```
 
 ### Switch the USB Dongle Mode
 By default, USB Wi-Fi dongles are in Driver CDROM Mode, which is incorrect for proper Wi-Fi usage. You need to switch the device to Wi-Fi Mode using usb-modeswitch.
