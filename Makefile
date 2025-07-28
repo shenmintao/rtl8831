@@ -37,6 +37,7 @@ endif
 
 src := $(dir $(lastword $(MAKEFILE_LIST)))
 EXTRA_CFLAGS += -I$(src)/include
+ccflags-y += -I$(src)/include
 
 EXTRA_LDFLAGS += --strip-debug
 
